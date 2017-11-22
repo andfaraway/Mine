@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  Mine
+//
+//  Created by libin on 17/11/14.
+//  Copyright © 2017年 Cnmobi. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "BaseTools.h"
+
+//Pods
+#import "MJRefresh.h"
+
+#define WeakSelf    __weak __typeof(&*self)    weakSelf  = self;
+#define StrongSelf  __strong __typeof(&*self) strongSelf = weakSelf;
+
+#endif /* PrefixHeader_pch */
