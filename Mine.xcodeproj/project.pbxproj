@@ -14,6 +14,7 @@
 		9ADFB1591FBAEEDD006D1E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB1581FBAEEDD006D1E9B /* Assets.xcassets */; };
 		9ADFB15C1FBAEEDD006D1E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB15A1FBAEEDD006D1E9B /* LaunchScreen.storyboard */; };
 		A82FE7C2351B99B86B724FCC /* libPods-TheFirstProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D68C746BC93370C7BCB38F42 /* libPods-TheFirstProject.a */; };
+		DA00671C1FC6A9120049E572 /* FloatActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA00671B1FC6A9120049E572 /* FloatActionButton.m */; };
 		DA022B7B1FC2CEDC007B7147 /* BatteryInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA022B741FC2CEDC007B7147 /* BatteryInfoManager.m */; };
 		DA022B7C1FC2CEDC007B7147 /* DeviceDataLibrery.m in Sources */ = {isa = PBXBuildFile; fileRef = DA022B761FC2CEDC007B7147 /* DeviceDataLibrery.m */; };
 		DA022B7D1FC2CEDC007B7147 /* DeviceInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA022B781FC2CEDC007B7147 /* DeviceInfoManager.m */; };
@@ -50,6 +51,8 @@
 		9ADFB15D1FBAEEDD006D1E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D68C746BC93370C7BCB38F42 /* libPods-TheFirstProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheFirstProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D885A7B73F801F49372560C6 /* Pods-TheFirstProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheFirstProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheFirstProject/Pods-TheFirstProject.release.xcconfig"; sourceTree = "<group>"; };
+		DA00671A1FC6A9120049E572 /* FloatActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatActionButton.h; sourceTree = "<group>"; };
+		DA00671B1FC6A9120049E572 /* FloatActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatActionButton.m; sourceTree = "<group>"; };
 		DA022B731FC2CEDC007B7147 /* BatteryInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryInfoManager.h; sourceTree = "<group>"; };
 		DA022B741FC2CEDC007B7147 /* BatteryInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatteryInfoManager.m; sourceTree = "<group>"; };
 		DA022B751FC2CEDC007B7147 /* DeviceDataLibrery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDataLibrery.h; sourceTree = "<group>"; };
@@ -167,6 +170,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA0067191FC6A9120049E572 /* FloatActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				DA00671A1FC6A9120049E572 /* FloatActionButton.h */,
+				DA00671B1FC6A9120049E572 /* FloatActionButton.m */,
+			);
+			path = FloatActionButton;
+			sourceTree = "<group>";
+		};
 		DA022B721FC2CEDC007B7147 /* DeviceTools */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,11 +210,12 @@
 		DAF590AB1FBBD3CE00460D26 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				DADF3E531FC3B67900FA4A40 /* SuperVC */,
-				DA022B721FC2CEDC007B7147 /* DeviceTools */,
+				DAF590EE1FBBE13F00460D26 /* ToolsMacros.h */,
 				DA3A30CB1FBED0BD003D4B3D /* BaseTools.h */,
 				DA3A30CC1FBED0BD003D4B3D /* BaseTools.m */,
-				DAF590EE1FBBE13F00460D26 /* ToolsMacros.h */,
+				DA0067191FC6A9120049E572 /* FloatActionButton */,
+				DADF3E531FC3B67900FA4A40 /* SuperVC */,
+				DA022B721FC2CEDC007B7147 /* DeviceTools */,
 				DAF5910B1FBBEEB600460D26 /* CoustomControls */,
 				DAF590AE1FBBD81C00460D26 /* category */,
 			);
@@ -399,6 +412,7 @@
 				DAF590FE1FBBEB9500460D26 /* UITabBar+Custom.m in Sources */,
 				DADF3E5C1FC3B67900FA4A40 /* SuperNavVC.m in Sources */,
 				DADF3E5E1FC3B67900FA4A40 /* SuperVC.m in Sources */,
+				DA00671C1FC6A9120049E572 /* FloatActionButton.m in Sources */,
 				DA3A30C81FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m in Sources */,
 				DA022B7E1FC2CEDC007B7147 /* NetWorkInfoManager.m in Sources */,
 				DAF590ED1FBBDF4500460D26 /* NSArray+SomeFunction.m in Sources */,

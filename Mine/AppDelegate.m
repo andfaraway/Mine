@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TabBarVC.h"
+#import "FloatActionButton.h"
 
 @interface AppDelegate ()
 
@@ -25,6 +26,10 @@
     
     TabBarVC *tabBarVC = [[TabBarVC alloc] init];
     self.window.rootViewController = tabBarVC;
+    
+    
+    FloatActionButton *button = [[FloatActionButton alloc]initWithFrame:CGRectMake(0.0, 100.0, 50, 50)];
+    [self.window addSubview:button];
     
     return YES;
 }

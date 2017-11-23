@@ -47,6 +47,8 @@
 #define kAppBuildVersion    [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
 /** APP名字 */
 #define kAppDisplayName     [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"]
+/** APPIcon  */
+#define kAppIconImage       [UIImage imageNamed:[[[[NSBundle mainBundle] infoDictionary]valueForKeyPath:@"CFBundleIcons.CFBundlePrimaryIcon.CFBundleIconFiles"] lastObject]]
 
 /** 当前语言 */
 #define kAppLocalLanguage   [[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode]
