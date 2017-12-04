@@ -12,6 +12,8 @@
 
 @end
 
+NSString * test1 = @"fafds"  ;
+NSString *const cellName = @"goodMan";
 @implementation TestVCViewController
 
 - (void)viewDidLoad {

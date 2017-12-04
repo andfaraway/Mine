@@ -7,24 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BD0AFADAFDD0A5D24BB7CD0 /* libPods-Mine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC105C6DD80E66A02F37CBFE /* libPods-Mine.a */; };
 		9ADFB14E1FBAEEDD006D1E9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFB14D1FBAEEDD006D1E9B /* main.m */; };
 		9ADFB1511FBAEEDD006D1E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFB1501FBAEEDD006D1E9B /* AppDelegate.m */; };
 		9ADFB1541FBAEEDD006D1E9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFB1531FBAEEDD006D1E9B /* ViewController.m */; };
-		9ADFB1571FBAEEDD006D1E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB1551FBAEEDD006D1E9B /* Main.storyboard */; };
 		9ADFB1591FBAEEDD006D1E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB1581FBAEEDD006D1E9B /* Assets.xcassets */; };
 		9ADFB15C1FBAEEDD006D1E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADFB15A1FBAEEDD006D1E9B /* LaunchScreen.storyboard */; };
-		A82FE7C2351B99B86B724FCC /* libPods-TheFirstProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D68C746BC93370C7BCB38F42 /* libPods-TheFirstProject.a */; };
 		DA00671C1FC6A9120049E572 /* FloatActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA00671B1FC6A9120049E572 /* FloatActionButton.m */; };
 		DA022B7B1FC2CEDC007B7147 /* BatteryInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA022B741FC2CEDC007B7147 /* BatteryInfoManager.m */; };
 		DA022B7C1FC2CEDC007B7147 /* DeviceDataLibrery.m in Sources */ = {isa = PBXBuildFile; fileRef = DA022B761FC2CEDC007B7147 /* DeviceDataLibrery.m */; };
 		DA022B7D1FC2CEDC007B7147 /* DeviceInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA022B781FC2CEDC007B7147 /* DeviceInfoManager.m */; };
 		DA022B7E1FC2CEDC007B7147 /* NetWorkInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA022B7A1FC2CEDC007B7147 /* NetWorkInfoManager.m */; };
+		DA2BCA6F1FC8093D006BF1CB /* MineNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2BCA6E1FC8093D006BF1CB /* MineNetworkTool.m */; };
 		DA3A30C81FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3A30C71FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m */; };
 		DA3A30CD1FBED0BD003D4B3D /* BaseTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3A30CC1FBED0BD003D4B3D /* BaseTools.m */; };
 		DA504B2F1FBD8938000AE3D8 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = DA504B2E1FBD8938000AE3D8 /* UIButton+Block.m */; };
+		DAB25DBF1FD529D800555712 /* ConstTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB25DBE1FD529D800555712 /* ConstTools.m */; };
 		DADF3E5C1FC3B67900FA4A40 /* SuperNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DADF3E551FC3B67900FA4A40 /* SuperNavVC.m */; };
 		DADF3E5E1FC3B67900FA4A40 /* SuperVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DADF3E581FC3B67900FA4A40 /* SuperVC.m */; };
 		DADF3E601FC3B67900FA4A40 /* TabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DADF3E5B1FC3B67900FA4A40 /* TabBarVC.m */; };
+		DAE71C051FCBF95800E128B1 /* HasTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE71C041FCBF95800E128B1 /* HasTabBarVC.m */; };
+		DAE71C081FCC083D00E128B1 /* TestVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE71C071FCC083D00E128B1 /* TestVCViewController.m */; };
 		DAF590E41FBBDB2000460D26 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF590E31FBBDB2000460D26 /* Foundation+Log.m */; };
 		DAF590EA1FBBDD5600460D26 /* UIColor+SomeFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF590E91FBBDD5600460D26 /* UIColor+SomeFunction.m */; };
 		DAF590ED1FBBDF4500460D26 /* NSArray+SomeFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF590EC1FBBDF4500460D26 /* NSArray+SomeFunction.m */; };
@@ -38,19 +41,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4BBE3AB8F30FBDAB7DD35173 /* Pods-TheFirstProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheFirstProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheFirstProject/Pods-TheFirstProject.debug.xcconfig"; sourceTree = "<group>"; };
 		9ADFB1491FBAEEDD006D1E9B /* Mine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ADFB14D1FBAEEDD006D1E9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9ADFB14F1FBAEEDD006D1E9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9ADFB1501FBAEEDD006D1E9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9ADFB1521FBAEEDD006D1E9B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9ADFB1531FBAEEDD006D1E9B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9ADFB1561FBAEEDD006D1E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9ADFB1581FBAEEDD006D1E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ADFB15B1FBAEEDD006D1E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9ADFB15D1FBAEEDD006D1E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D68C746BC93370C7BCB38F42 /* libPods-TheFirstProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheFirstProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D885A7B73F801F49372560C6 /* Pods-TheFirstProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheFirstProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheFirstProject/Pods-TheFirstProject.release.xcconfig"; sourceTree = "<group>"; };
+		BC105C6DD80E66A02F37CBFE /* libPods-Mine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4E20501D4A29DBD1BABBBB0 /* Pods-Mine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mine/Pods-Mine.debug.xcconfig"; sourceTree = "<group>"; };
+		D95E81534F398E002DFCBD3A /* Pods-Mine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mine.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mine/Pods-Mine.release.xcconfig"; sourceTree = "<group>"; };
 		DA00671A1FC6A9120049E572 /* FloatActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatActionButton.h; sourceTree = "<group>"; };
 		DA00671B1FC6A9120049E572 /* FloatActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatActionButton.m; sourceTree = "<group>"; };
 		DA022B731FC2CEDC007B7147 /* BatteryInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryInfoManager.h; sourceTree = "<group>"; };
@@ -62,18 +64,26 @@
 		DA022B791FC2CEDC007B7147 /* NetWorkInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkInfoManager.h; sourceTree = "<group>"; };
 		DA022B7A1FC2CEDC007B7147 /* NetWorkInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkInfoManager.m; sourceTree = "<group>"; };
 		DA2B29D21FBAFF3600D49FCA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DA2BCA6D1FC8093D006BF1CB /* MineNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineNetworkTool.h; sourceTree = "<group>"; };
+		DA2BCA6E1FC8093D006BF1CB /* MineNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineNetworkTool.m; sourceTree = "<group>"; };
 		DA3A30C61FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
 		DA3A30C71FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
 		DA3A30CB1FBED0BD003D4B3D /* BaseTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTools.h; path = category/BaseTools.h; sourceTree = "<group>"; };
 		DA3A30CC1FBED0BD003D4B3D /* BaseTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTools.m; path = category/BaseTools.m; sourceTree = "<group>"; };
 		DA504B2D1FBD8938000AE3D8 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
 		DA504B2E1FBD8938000AE3D8 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
+		DAB25DBD1FD529D800555712 /* ConstTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstTools.h; sourceTree = "<group>"; };
+		DAB25DBE1FD529D800555712 /* ConstTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstTools.m; sourceTree = "<group>"; };
 		DADF3E541FC3B67900FA4A40 /* SuperNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperNavVC.h; sourceTree = "<group>"; };
 		DADF3E551FC3B67900FA4A40 /* SuperNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperNavVC.m; sourceTree = "<group>"; };
 		DADF3E571FC3B67900FA4A40 /* SuperVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperVC.h; sourceTree = "<group>"; };
 		DADF3E581FC3B67900FA4A40 /* SuperVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperVC.m; sourceTree = "<group>"; };
 		DADF3E5A1FC3B67900FA4A40 /* TabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarVC.h; sourceTree = "<group>"; };
 		DADF3E5B1FC3B67900FA4A40 /* TabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarVC.m; sourceTree = "<group>"; };
+		DAE71C031FCBF95800E128B1 /* HasTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasTabBarVC.h; sourceTree = "<group>"; };
+		DAE71C041FCBF95800E128B1 /* HasTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasTabBarVC.m; sourceTree = "<group>"; };
+		DAE71C061FCC083D00E128B1 /* TestVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVCViewController.h; sourceTree = "<group>"; };
+		DAE71C071FCC083D00E128B1 /* TestVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVCViewController.m; sourceTree = "<group>"; };
 		DAF590E01FBBD9AC00460D26 /* ToolsCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsCategory.h; sourceTree = "<group>"; };
 		DAF590E31FBBDB2000460D26 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		DAF590E81FBBDD5600460D26 /* UIColor+SomeFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SomeFunction.h"; sourceTree = "<group>"; };
@@ -102,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A82FE7C2351B99B86B724FCC /* libPods-TheFirstProject.a in Frameworks */,
+				0BD0AFADAFDD0A5D24BB7CD0 /* libPods-Mine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,8 +122,8 @@
 		188709258F4AAB539EC3702D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4BBE3AB8F30FBDAB7DD35173 /* Pods-TheFirstProject.debug.xcconfig */,
-				D885A7B73F801F49372560C6 /* Pods-TheFirstProject.release.xcconfig */,
+				C4E20501D4A29DBD1BABBBB0 /* Pods-Mine.debug.xcconfig */,
+				D95E81534F398E002DFCBD3A /* Pods-Mine.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -139,12 +149,14 @@
 		9ADFB14B1FBAEEDD006D1E9B /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				DA2BCA6C1FC808EC006BF1CB /* Network */,
 				DAF590AB1FBBD3CE00460D26 /* Tools */,
 				9ADFB14F1FBAEEDD006D1E9B /* AppDelegate.h */,
 				9ADFB1501FBAEEDD006D1E9B /* AppDelegate.m */,
 				9ADFB1521FBAEEDD006D1E9B /* ViewController.h */,
 				9ADFB1531FBAEEDD006D1E9B /* ViewController.m */,
-				9ADFB1551FBAEEDD006D1E9B /* Main.storyboard */,
+				DAE71C061FCC083D00E128B1 /* TestVCViewController.h */,
+				DAE71C071FCC083D00E128B1 /* TestVCViewController.m */,
 				9ADFB1581FBAEEDD006D1E9B /* Assets.xcassets */,
 				9ADFB15A1FBAEEDD006D1E9B /* LaunchScreen.storyboard */,
 				9ADFB15D1FBAEEDD006D1E9B /* Info.plist */,
@@ -165,7 +177,7 @@
 		9F343E826CF2F33988B76C14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D68C746BC93370C7BCB38F42 /* libPods-TheFirstProject.a */,
+				BC105C6DD80E66A02F37CBFE /* libPods-Mine.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -194,6 +206,15 @@
 			path = DeviceTools;
 			sourceTree = "<group>";
 		};
+		DA2BCA6C1FC808EC006BF1CB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DA2BCA6D1FC8093D006BF1CB /* MineNetworkTool.h */,
+				DA2BCA6E1FC8093D006BF1CB /* MineNetworkTool.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		DADF3E531FC3B67900FA4A40 /* SuperVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +222,8 @@
 				DADF3E551FC3B67900FA4A40 /* SuperNavVC.m */,
 				DADF3E571FC3B67900FA4A40 /* SuperVC.h */,
 				DADF3E581FC3B67900FA4A40 /* SuperVC.m */,
+				DAE71C031FCBF95800E128B1 /* HasTabBarVC.h */,
+				DAE71C041FCBF95800E128B1 /* HasTabBarVC.m */,
 				DADF3E5A1FC3B67900FA4A40 /* TabBarVC.h */,
 				DADF3E5B1FC3B67900FA4A40 /* TabBarVC.m */,
 			);
@@ -213,6 +236,8 @@
 				DAF590EE1FBBE13F00460D26 /* ToolsMacros.h */,
 				DA3A30CB1FBED0BD003D4B3D /* BaseTools.h */,
 				DA3A30CC1FBED0BD003D4B3D /* BaseTools.m */,
+				DAB25DBD1FD529D800555712 /* ConstTools.h */,
+				DAB25DBE1FD529D800555712 /* ConstTools.m */,
 				DA0067191FC6A9120049E572 /* FloatActionButton */,
 				DADF3E531FC3B67900FA4A40 /* SuperVC */,
 				DA022B721FC2CEDC007B7147 /* DeviceTools */,
@@ -332,7 +357,6 @@
 			files = (
 				9ADFB15C1FBAEEDD006D1E9B /* LaunchScreen.storyboard in Resources */,
 				9ADFB1591FBAEEDD006D1E9B /* Assets.xcassets in Resources */,
-				9ADFB1571FBAEEDD006D1E9B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +375,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheFirstProject/Pods-TheFirstProject-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mine/Pods-Mine-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CF58B75533DBB8A4070979BB /* [CP] Check Pods Manifest.lock */ = {
@@ -365,7 +389,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TheFirstProject-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Mine-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -378,9 +402,39 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TheFirstProject/Pods-TheFirstProject-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mine/Pods-Mine-resources.sh",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_activity_chrome@2x.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_activity_chrome@2x~ipad.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_activity_dolphin@2x.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_activity_dolphin@2x~ipad.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_activity_link@2x.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_activity_link@2x~ipad.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_activity_opera@2x.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_activity_opera@2x~ipad.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_activity_safari@2x.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_activity_safari@2x~ipad.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_toolbar_action.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_toolbar_action@2x.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_toolbar_action@3x.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_toolbar_backward.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_toolbar_backward@2x.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_toolbar_backward@3x.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_toolbar_forward.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_toolbar_forward@2x.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_toolbar_forward@3x.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_toolbar_reload.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_toolbar_reload@2x.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_toolbar_reload@3x.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_toolbar_stop.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_toolbar_stop@2x.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/dzn_icn_toolbar_stop@3x.png",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/de.lproj",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/en.lproj",
+				"${PODS_ROOT}/DZNWebViewController/Source/Resources/es.lproj",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialUI/UMSocialSDKResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -388,7 +442,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheFirstProject/Pods-TheFirstProject-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mine/Pods-Mine-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -399,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAF591011FBBEBE500460D26 /* UIView+Frame.m in Sources */,
+				DA2BCA6F1FC8093D006BF1CB /* MineNetworkTool.m in Sources */,
 				9ADFB1541FBAEEDD006D1E9B /* ViewController.m in Sources */,
 				DA3A30CD1FBED0BD003D4B3D /* BaseTools.m in Sources */,
 				DAF590F71FBBE80400460D26 /* UIImage+SomeFunction.m in Sources */,
@@ -407,6 +462,8 @@
 				9ADFB1511FBAEEDD006D1E9B /* AppDelegate.m in Sources */,
 				DAF5910F1FBBEEB600460D26 /* LKeyChain.m in Sources */,
 				DADF3E601FC3B67900FA4A40 /* TabBarVC.m in Sources */,
+				DAE71C081FCC083D00E128B1 /* TestVCViewController.m in Sources */,
+				DAB25DBF1FD529D800555712 /* ConstTools.m in Sources */,
 				DAF590EA1FBBDD5600460D26 /* UIColor+SomeFunction.m in Sources */,
 				9ADFB14E1FBAEEDD006D1E9B /* main.m in Sources */,
 				DAF590FE1FBBEB9500460D26 /* UITabBar+Custom.m in Sources */,
@@ -422,20 +479,13 @@
 				DA022B7D1FC2CEDC007B7147 /* DeviceInfoManager.m in Sources */,
 				DAF590F41FBBE32C00460D26 /* NSString+SomeFunction.m in Sources */,
 				DA022B7B1FC2CEDC007B7147 /* BatteryInfoManager.m in Sources */,
+				DAE71C051FCBF95800E128B1 /* HasTabBarVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9ADFB1551FBAEEDD006D1E9B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9ADFB1561FBAEEDD006D1E9B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9ADFB15A1FBAEEDD006D1E9B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -539,7 +589,7 @@
 		};
 		9ADFB1611FBAEEDD006D1E9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BBE3AB8F30FBDAB7DD35173 /* Pods-TheFirstProject.debug.xcconfig */;
+			baseConfigurationReference = C4E20501D4A29DBD1BABBBB0 /* Pods-Mine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 95ED8Y5KT9;
@@ -554,7 +604,7 @@
 		};
 		9ADFB1621FBAEEDD006D1E9B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D885A7B73F801F49372560C6 /* Pods-TheFirstProject.release.xcconfig */;
+			baseConfigurationReference = D95E81534F398E002DFCBD3A /* Pods-Mine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 95ED8Y5KT9;

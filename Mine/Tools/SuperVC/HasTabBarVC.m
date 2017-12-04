@@ -8,9 +8,6 @@
 
 #import "HasTabBarVC.h"
 
-#import "SuperNavVC.h"
-#import "ByxLoginVC.h"
-
 @interface HasTabBarVC ()
 @end
 
@@ -25,18 +22,17 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    
     [super viewWillAppear:animated];
     //显示tabBar
     self.tabBarController.tabBar.frame = CGRectMake(0, kHeight-kTAB_BAR_H-(kSTATUS_BAR_H-20), kWidth, kTAB_BAR_H);;
 }
 
 
-
 /** 监听状态栏改变  */
 - (void)statusBarFrameChanged{
       self.tabBarController.tabBar.frame = CGRectMake(0, kHeight-kTAB_BAR_H-(kSTATUS_BAR_H-20), kWidth, kTAB_BAR_H);;
 }
+
 - (void)dealloc{
     //监听状态栏改变
     [[ NSNotificationCenter defaultCenter ] removeObserver:self name:UIApplicationDidChangeStatusBarFrameNotification object:nil];

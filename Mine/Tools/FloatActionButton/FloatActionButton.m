@@ -43,6 +43,7 @@
 -(IBAction)buttonAction:(id)sender{
     if (self.floatBtnClickBlock) {
         self.floatBtnClickBlock();
+        return;
     }
     
     CGRect frame = self.frame;

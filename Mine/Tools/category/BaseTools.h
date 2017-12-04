@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "ToolsMacros.h"
 #import "ToolsCategory.h"
+#import "ConstTools.h"
+#import "SuperVC.h"
+#import "HasTabBarVC.h"
+#import "SuperNavVC.h"
 
 @interface BaseTools : NSObject
 

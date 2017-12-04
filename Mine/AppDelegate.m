@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TabBarVC.h"
-#import "FloatActionButton.h"
+#import <UMSocialCore/UMSocialCore.h>
 
 @interface AppDelegate ()
 
@@ -23,15 +23,32 @@
     [self.window makeKeyAndVisible];
     
     
-    
     TabBarVC *tabBarVC = [[TabBarVC alloc] init];
     self.window.rootViewController = tabBarVC;
+    NSString  *appKey = @"wxdc1e388c3822c80b";
+    NSString *appSecret = @"3baf1193c85774b3fd9d18447d76cab0";
+
+    /* 设置友盟appkey */
+    [[UMSocialManager defaultManager] setUmSocialAppkey:kUMAppKey];
     
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:appKey appSecret:appSecret redirectURL:nil];
     
-    FloatActionButton *button = [[FloatActionButton alloc]initWithFrame:CGRectMake(0.0, 100.0, 50, 50)];
-    [self.window addSubview:button];
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_QQ appKey:@"1105821097"/*设置QQ平台的appID*/  appSecret:nil redirectURL:@"http://mobile.umeng.com/social"];
+    
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey:@"3921700954"  appSecret:@"04b48b094faeb16683c32669824ebdad" redirectURL:@"https://sns.whalecloud.com/sina2/callback"];
+
     
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    //6.3的新的API调用，是为了兼容国外平台(例如:新版facebookSDK,VK等)的调用[如果用6.2的api调用会没有回调],对国内平台没有影响
+    BOOL result = [[UMSocialManager defaultManager] handleOpenURL:url sourceApplication:sourceApplication annotation:annotation];
+    if (!result) {
+        // 其他如支付等SDK的回调
+    }
+    return result;
 }
 
 

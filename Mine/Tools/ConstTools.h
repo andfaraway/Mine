@@ -10,4 +10,9 @@
 
 @interface ConstTools : NSObject
 
+
+extern NSString *const kWeixinAppID;
+extern NSString *const kWeixinAppSecret;
+extern NSString *const kUMAppKey;
+
 @end

@@ -222,8 +222,10 @@
 
 + (void)showAlertWithTitle:(NSString *)title vc:(UIViewController *)vc trueBlock:(void(^)())trueBlock cancelBlock:(void(^)())cancelBlock{
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:nil preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-        trueBlock();
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        if (trueBlock) {
+            trueBlock();
+        }
     }];
     [alert addAction:action];
     if (cancelBlock) {

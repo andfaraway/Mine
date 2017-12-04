@@ -19,6 +19,9 @@
     [super viewDidLoad];
     
     [self useMethodToFindBlackLineAndHidden];//去除navigationbar下面的黑线
+    
+    //隐藏tabbar
+    self.tabBarController.tabBar.frame = CGRectMake(0, kHeight, kWidth, 0);
 }
 
 

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+extern NSString * const cellName;
 
-@interface TestVCViewController : UIViewController
+@interface TestVCViewController : SuperVC
 
 @end

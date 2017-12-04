@@ -7,7 +7,7 @@
 /** 带tabBar控制器 */
 
 #import <UIKit/UIKit.h>
-
+#import "SuperVC.h"
 @interface HasTabBarVC : SuperVC
 
 
