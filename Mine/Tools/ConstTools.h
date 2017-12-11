@@ -13,6 +13,12 @@
 
 extern NSString *const kWeixinAppID;
 extern NSString *const kWeixinAppSecret;
+extern NSString *const kWeiboAppID;
+extern NSString *const kWeiboAppSecret;
 extern NSString *const kUMAppKey;
+
+extern NSString *const kPlaceholder_Account;
+
+extern NSString *const kIsLogin;
 
 @end

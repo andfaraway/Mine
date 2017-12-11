@@ -22,17 +22,18 @@ const NSInteger age1 = 42;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"title";
- 
-    
-   
-
+    //self.title = @"title";
     
     
-    FloatActionButton *button = [[FloatActionButton alloc]initWithFrame:CGRectMake(0.0, 100.0, 50, 50)];
+    FloatActionButton *button = [[FloatActionButton alloc]initWithFrame:CGRectMake(0.0, 64, 50, 50)];
     [self.view addSubview:button];
-    
+    return;
     button.floatBtnClickBlock = ^{
+        UIViewController *vc = [[NSClassFromString(@"TestVCViewController") alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+        return ;
+        
+        
       //  [self shareWebPageToPlatformType:UMSocialPlatformType_WechatSession];
         [UMSocialUIManager setPreDefinePlatforms:@[@(UMSocialPlatformType_Sina),@(UMSocialPlatformType_QQ),@(UMSocialPlatformType_Qzone),@(UMSocialPlatformType_WechatSession),@(UMSocialPlatformType_WechatFavorite),@(UMSocialPlatformType_WechatTimeLine)]];
         
@@ -65,9 +66,9 @@ const NSInteger age1 = 42;
     [[UMSocialManager defaultManager] shareToPlatform:platformType messageObject:messageObject currentViewController:self completion:^(id data, NSError *error) {
         if (error) {
             NSLog(@"************Share fail with error %@*********",error);
-            [BaseTools showAlertWithTitle:@"分享失败" vc:self trueBlock:nil cancelBlock:nil];
+            [BaseTools showAlertWithTitle:@"分享失败" message:nil vc:self trueBlock:nil cancelBlock:nil];
         }else{
-            [BaseTools showAlertWithTitle:@"分享成功" vc:self trueBlock:nil cancelBlock:nil];
+            [BaseTools showAlertWithTitle:@"分享成功" message:nil vc:self trueBlock:nil cancelBlock:nil];
         }
     }];
 }

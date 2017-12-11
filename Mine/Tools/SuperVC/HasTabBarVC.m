@@ -12,7 +12,7 @@
 @end
 
 @implementation HasTabBarVC
-
+static BOOL isIPhoneX;//判断是否iPhone X
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -23,14 +23,30 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    //显示tabBar
-    self.tabBarController.tabBar.frame = CGRectMake(0, kHeight-kTAB_BAR_H-(kSTATUS_BAR_H-20), kWidth, kTAB_BAR_H);;
+    if ([[[DeviceDataLibrery sharedLibrery]getDiviceName] containsString:@"iPhone X"] || (kHeight == 812)) {
+        isIPhoneX = YES;
+    }else{
+        isIPhoneX = NO;
+    }
+    
+    //显示tabBar(iphoneX判断)
+    if (isIPhoneX) {
+        self.tabBarController.tabBar.frame = CGRectMake(0, kHeight-83, kWidth, 83);
+    }else{
+        self.tabBarController.tabBar.frame = CGRectMake(0, kHeight-kTAB_BAR_H-(kSTATUS_BAR_H-20), kWidth, kTAB_BAR_H);;
+    }
+
 }
 
 
 /** 监听状态栏改变  */
 - (void)statusBarFrameChanged{
-      self.tabBarController.tabBar.frame = CGRectMake(0, kHeight-kTAB_BAR_H-(kSTATUS_BAR_H-20), kWidth, kTAB_BAR_H);;
+    //显示tabBar(iphoneX判断)
+    if (isIPhoneX) {
+        self.tabBarController.tabBar.frame = CGRectMake(0, kHeight-83, kWidth, 83);
+    }else{
+        self.tabBarController.tabBar.frame = CGRectMake(0, kHeight-kTAB_BAR_H-(kSTATUS_BAR_H-20), kWidth, kTAB_BAR_H);;
+    }
 }
 
 - (void)dealloc{

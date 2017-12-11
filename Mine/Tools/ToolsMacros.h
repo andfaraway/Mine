@@ -10,17 +10,20 @@
 #ifndef ToolsMacros_h
 #define ToolsMacros_h
 
+/** 主线程刷新UI  */
+#define RefreshUI(_a) dispatch_async(dispatch_get_main_queue(), ^{_a;});
+
 /** 硬件尺寸信息 */
 #define kWidth      [UIScreen mainScreen].bounds.size.width
 #define kHeight     [UIScreen mainScreen].bounds.size.height
-#define kScaleWidth kWidth/375.0
+#define kScaleWidth kWidth/320
 #define isPad       [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad
 
 /** 系统控件的默认高度 */
-#define kSTATUS_BAR_H   (20.f)
+#define kSTATUS_BAR_H   [UIApplication sharedApplication].statusBarFrame.size.height
 #define kNAV_BAR_H      (44.f)
-#define kTAB_BAR_H      (49.f)
-#define kCELL_H         (44.f)
+#define kTAB_BAR_H      (kHeight == 812 ? 83 : 49)
+#define kCELL_H         44*kScaleWidth
 
 /** 中英状态下键盘的高度 */
 #define kEN_KEY_BOARD_H  (216.f)
@@ -64,8 +67,28 @@
 #define RGBColor_a(_r, _g, _b, _a)  [UIColor colorWithRed:(_r)/255.0 green:(_g)/255.0 blue:(_b)/255.0 alpha:_a]
 #define RGBColor_f(_f)              [UIColor colorWithRed:((float)((_f & 0xFF0000) >> 16))/255.0 green:((float)((_f & 0xFF00)>> 8))/255.0 blue:((float) (_f & 0xFF))/255.0 alpha:1.0f]
 
-#define kBackgroundAlphatColor [UIColor colorWithWhite:0 alpha:0.3] //黑色半透明背景
+#define kBlackColor     [UIColor blackColor]      // 0.0 white
+#define kDarkGrayColor  [UIColor darkGrayColor]   // 0.333 white
+#define kLightGrayColor [UIColor lightGrayColor]  // 0.667 white
+#define kWhiteColor     [UIColor whiteColor]      // 1.0 white
+#define kGrayColor      [UIColor grayColor]       // 0.5 white
+#define kRedColor       [UIColor redColor]        // 1.0, 0.0, 0.0 RGB
+#define kGreenColor     [UIColor greenColor]      // 0.0, 1.0, 0.0 RGB
+#define kBlueColor      [UIColor blueColor]       // 0.0, 0.0, 1.0 RGB
+#define hCyanColor      [UIColor cyanColor]       // 0.0, 1.0, 1.0 RGB
+#define hYellowColor    [UIColor yellowColor]     // 1.0, 1.0, 0.0 RGB
+#define hMagentaColor   [UIColor magentaColor]    // 1.0, 0.0, 1.0 RGB
+#define kOrangeColor    [UIColor orangeColor]     // 1.0, 0.5, 0.0 RGB
+#define kPurpleColor    [UIColor purpleColor]     // 0.5, 0.0, 0.5 RGB
+#define hBrownColor     [UIColor brownColor]      // 0.6, 0.4, 0.2 RGB
+#define kClearColor     [UIColor clearColor]      // 0.0 white, 0.0 alpha
 
+
+#define kBackgroundAlphatColor [UIColor colorWithWhite:0 alpha:0.3] //黑色半透明背景
+#define kThemeColor     RGBColor(246, 110, 0)     // 主题色
+#define kBgColor        RGBColor(243, 242,240)    // 页面背景色
+#define kLineColor      RGBColor(198, 201, 201)   //线条颜色
+#define kTextColor      RGBColor(56, 56, 56)      //字体颜色
 
 /** 加载图片 */
 #define ImageNamed(_name)       [UIImage imageNamed:_name]

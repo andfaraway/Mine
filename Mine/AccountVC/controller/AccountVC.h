@@ -8,6 +8,6 @@
 
 #import "SuperVC.h"
 
-@interface AccountVC : SuperVC
+@interface AccountVC : HasTabBarVC
 
 @end

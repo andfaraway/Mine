@@ -220,8 +220,8 @@
     return result;
 }
 
-+ (void)showAlertWithTitle:(NSString *)title vc:(UIViewController *)vc trueBlock:(void(^)())trueBlock cancelBlock:(void(^)())cancelBlock{
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:nil preferredStyle:UIAlertControllerStyleAlert];
++ (void)showAlertWithTitle:(NSString *)title message:(NSString *)message vc:(UIViewController *)vc trueBlock:(void(^)())trueBlock cancelBlock:(void(^)())cancelBlock{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         if (trueBlock) {
             trueBlock();
@@ -269,7 +269,7 @@
     {
         NSLog(@"不允许状态，可以弹出一个alertview提示用户在隐私设置中开启权限");
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self showAlertWithTitle:@"请允许访问相机" vc:[self getCurrentVC] trueBlock:^{
+            [self showAlertWithTitle:@"请允许访问相机" message:nil vc:[self getCurrentVC] trueBlock:^{
                 [self jumpSystemSetting];
             } cancelBlock:^{
                 
@@ -297,7 +297,7 @@
         if (author == kCLAuthorizationStatusRestricted || author == kCLAuthorizationStatusDenied) {
             //无权限
             dispatch_async(dispatch_get_main_queue(), ^{
-                [self showAlertWithTitle:@"请允许访问相册" vc:[self getCurrentVC] trueBlock:^{
+                [self showAlertWithTitle:@"请允许访问相册" message:nil vc:[self getCurrentVC] trueBlock:^{
                     [self jumpSystemSetting];
                 } cancelBlock:^{
                     
@@ -313,7 +313,7 @@
             status == PHAuthorizationStatusDenied) {
             //无权限
             dispatch_async(dispatch_get_main_queue(), ^{
-                [self showAlertWithTitle:@"请允许访问相册" vc:[self getCurrentVC] trueBlock:^{
+                [self showAlertWithTitle:@"请允许访问相册" message:nil vc:[self getCurrentVC] trueBlock:^{
                     [self jumpSystemSetting];
                 } cancelBlock:^{
                     
@@ -340,5 +340,16 @@
     }
 }
 
-
+/** 给cell添加分割线  superView:父视图 */
++ (void)getACellLineWithSuperView:(UIView *)superView{
+    UILabel *label = [[UILabel alloc]init];
+    label.backgroundColor = kBgColor;
+    [superView addSubview:label];
+    [label makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(superView.left);
+        make.right.equalTo(superView.right);
+        make.top.equalTo(superView.bottom).offset(-1);
+        make.height.equalTo(1);
+    }];
+}
 @end

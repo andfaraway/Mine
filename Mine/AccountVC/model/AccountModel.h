@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface AccountModel : NSObject
+@property(nonatomic,copy)NSString *name;
+@property(nonatomic,copy)NSString *iconurl;
+@property(nonatomic,copy)NSString *unionGender;
 
 @end

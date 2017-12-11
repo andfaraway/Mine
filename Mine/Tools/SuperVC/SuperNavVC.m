@@ -17,7 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self useMethodToFindBlackLineAndHidden];//去除navigationbar下面的黑线
+    //[self useMethodToFindBlackLineAndHidden];//去除navigationbar下面的黑线
 
     
 }

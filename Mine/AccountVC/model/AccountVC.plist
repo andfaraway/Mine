@@ -1,14 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   Property List.plist
-   Mine
-
-   Created by libin on 2017/12/11.
-   Copyright (c) 2017年 Cnmobi. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<dict>
+	<key>section2</key>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>icon_vip</string>
+			<key>title</key>
+			<string>会员中心</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>icon_shopping</string>
+			<key>title</key>
+			<string>商城</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>icon_online</string>
+			<key>title</key>
+			<string>在线听歌免流量</string>
+		</dict>
+	</array>
+	<key>section3</key>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>icon_setting</string>
+			<key>title</key>
+			<string>设置</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>icon_saoyisao</string>
+			<key>title</key>
+			<string>扫一扫</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>icon_skin</string>
+			<key>title</key>
+			<string>个性换肤</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>icon_night</string>
+			<key>title</key>
+			<string>夜间模式</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>icon_time</string>
+			<key>title</key>
+			<string>定时关闭</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>icon_timing</string>
+			<key>title</key>
+			<string>音乐闹钟</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>icon_driving</string>
+			<key>title</key>
+			<string>驾驶模式</string>
+		</dict>
+	</array>
+	<key>section4</key>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>icon_share</string>
+			<key>title</key>
+			<string>分享网易云音乐</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>icon_about</string>
+			<key>title</key>
+			<string>关于</string>
+		</dict>
+	</array>
+	<key>section1</key>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>icon_message</string>
+			<key>title</key>
+			<string>我的消息</string>
+		</dict>
+	</array>
+</dict>
 </plist>

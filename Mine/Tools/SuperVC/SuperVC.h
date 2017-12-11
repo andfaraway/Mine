@@ -10,9 +10,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SuperVC : UIViewController
+@interface SuperVC : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
+@property(nonatomic,strong)UITableView *tableView;
 
-
+- (void)initTableView;
 
 @end

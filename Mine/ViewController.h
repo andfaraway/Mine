@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SuperVC.h"
-@interface ViewController : SuperVC
+@interface ViewController : HasTabBarVC
 
 
 @end

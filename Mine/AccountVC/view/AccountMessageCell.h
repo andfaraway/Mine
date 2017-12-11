@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AccountModel.h"
 
 @interface AccountMessageCell : UITableViewCell
+
+@property(nonatomic,strong)AccountModel *model;
 
 @end

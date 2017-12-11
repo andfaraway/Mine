@@ -10,6 +10,7 @@
 #import "ToolsMacros.h"
 #import "ToolsCategory.h"
 #import "ConstTools.h"
+#import "DeviceDataLibrery.h"
 #import "SuperVC.h"
 #import "HasTabBarVC.h"
 #import "SuperNavVC.h"
@@ -45,7 +46,7 @@
 + (UIViewController *)getCurrentVC;
 
 /** 一个按钮的alert框  */
-+ (void)showAlertWithTitle:(NSString *)title vc:(UIViewController *)vc trueBlock:(void(^)())trueBlock cancelBlock:(void(^)())cancelBlock;
++ (void)showAlertWithTitle:(NSString *)title message:(NSString *)message vc:(UIViewController *)vc trueBlock:(void(^)())trueBlock cancelBlock:(void(^)())cancelBlock;
 
 /** 结束刷新  */
 + (void)endMJReflash:(UITableView *)tableView;
@@ -58,4 +59,7 @@
 
 /** 跳转隐私设置  */
 + (void)jumpSystemSetting;
+
+/** 给cell添加分割线  superView:父视图 */
++ (void)getACellLineWithSuperView:(UIView *)superView;
 @end

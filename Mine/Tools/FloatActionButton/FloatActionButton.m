@@ -70,7 +70,7 @@
     CGPoint point = [pan translationInView:self];
     
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
-    CGFloat height = [UIScreen mainScreen].bounds.size.height;
+    CGFloat height = self.superview.frame.size.height;
     CGRect originalFrame = self.frame;
     //改变frame值
     originalFrame.origin.x += point.x;

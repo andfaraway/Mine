@@ -13,6 +13,9 @@
 
 #import "MineNetworkTool.h"
 
+#define MAS_SHORTHAND_GLOBALS //使用全局宏定义，可以使equalTo等效于mas_equalTo
+#define MAS_SHORTHAND   //使用全局宏定义, 可以在调用masonry方法的时候不使用mas_前缀
+
 //Pods
 #import "MJRefresh.h"
 #import "Masonry.h"
@@ -22,7 +25,10 @@
 #import "UIScrollView+EmptyDataSet.h"
 
 
+
 #define WeakSelf    __weak __typeof(&*self)    weakSelf  = self;
 #define StrongSelf  __strong __typeof(&*self) strongSelf = weakSelf;
+
+
 
 #endif /* PrefixHeader_pch */

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface AccountMessageNoLoginCell : UITableViewCell
-
+@property(nonatomic,copy)void(^loginBlock)();
 @end

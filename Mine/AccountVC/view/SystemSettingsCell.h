@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SystemSettingsCell : UITableViewCell
+@property(nonatomic,strong)UILabel *line;
 
 @end
