@@ -1,0 +1,13 @@
+//
+//  FriendsVC.h
+//  Mine
+//
+//  Created by libin on 2018/4/11.
+//  Copyright © 2018年 Cnmobi. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface FriendsVC : UIViewController
+
+@end
