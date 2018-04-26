@@ -6,7 +6,9 @@
 //  Copyright (c) 2015年 apple. All rights reserved.
 //
 #import "TabBarVC.h"
+#import "MyMusicVC.h"
 #import "AccountVC.h"
+#import "FriendsVC.h"
 
 @interface TabBarVC () <UITabBarControllerDelegate>
 
@@ -28,8 +30,8 @@
     [super viewDidLoad];
     
     UIViewController *vc0 = [NSClassFromString(@"ViewController") new];
-    UIViewController *vc1 = [UIViewController new];
-    UIViewController *vc2 = [UIViewController new];
+    UIViewController *vc1 = [MyMusicVC new];
+    UIViewController *vc2 = [FriendsVC new];
     UIViewController *vc3 = [AccountVC new];
     
     SuperNavVC *nav0 = [[SuperNavVC alloc] initWithRootViewController:vc0];
@@ -54,8 +56,8 @@
                             NSLocalizedString(@"我的音乐", nil),
                             NSLocalizedString(@"朋友", nil),
                             NSLocalizedString(@"账号", nil)];
-    NSArray *imageArr0  = @[@"icon_black", @"menu_black", @"oclock_black",@"man_black"];
-    NSArray *imageArr1  = @[@"icon_black", @"menu_black", @"oclock_black",@"man_black"];
+    NSArray *imageArr0  = @[@"icon_black", @"music_gray", @"friend_gray",@"man_black"];
+    NSArray *imageArr1  = @[@"icon_black", @"music_gray", @"friend_gray",@"man_black"];
     
     for(int i = 0; i < self.viewControllers.count; i++)
     {
@@ -88,7 +90,7 @@
 //        {
 //            one.tabBarItem.imageInsets = UIEdgeInsetsMake(-14, 0, 14, 0); //设置图片居中，注意这里的两个值14，-14
 //        }
-        self.tabBar.tintColor = [UIColor redColor];
+        self.tabBar.tintColor = kWarmingRedColor;
 //        self.tabBar.clipsToBounds = YES;
     }
 }

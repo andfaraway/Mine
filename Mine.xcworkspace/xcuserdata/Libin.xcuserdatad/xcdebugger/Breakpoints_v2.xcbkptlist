@@ -19,13 +19,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Mine/AccountVC/controller/AccountVC.m"
-            timestampString = "534681256.49778"
+            filePath = "Mine/SinVoiceVC.m"
+            timestampString = "536833046.153461"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "-getUserInfoForPlatform:"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
+            landmarkName = "-startPlay:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

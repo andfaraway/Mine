@@ -16,6 +16,8 @@
 
 @implementation AppDelegate
 
+#define TwitterAppKey            @"mmfkXPEKyTamfRJ06GChdq6hn"
+#define TwitterAppSecret         @"KHNAFPPGygls5EMWQXHClNlZEIghZYD7YgnT8CQllvY7JLonpM"
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -35,7 +37,10 @@
     
     [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_QQ appKey:@"1105821097"/*设置QQ平台的appID*/  appSecret:nil redirectURL:@"http://mobile.umeng.com/social"];
     
-    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey:kWeixinAppID  appSecret:kWeiboAppSecret redirectURL:@"https://sns.whalecloud.com/sina2/callback"];
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey:kWeiboAppID  appSecret:kWeiboAppSecret redirectURL:@"https://sns.whalecloud.com/sina2/callback"];
+    
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Twitter appKey:TwitterAppKey  appSecret:TwitterAppSecret redirectURL:@"http://www.hkcd.com"];
+    
 
     
     return YES;
@@ -51,6 +56,13 @@
     return result;
 }
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+    BOOL result = [[UMSocialManager defaultManager] handleOpenURL:url options:options];
+    if (!result) {
+        // 其他如支付等SDK的回调
+    }
+    return result;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

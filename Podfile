@@ -16,4 +16,11 @@ pod 'UMengUShare/Social/ReducedQQ'
 pod 'UMengUShare/Social/ReducedSina'
 pod 'UMengUShare/UI'
 pod 'DZNWebViewController'
+# 集成Google+
+pod 'UMengUShare/Social/GooglePlus'
+# 集成Facebook/Messenger
+pod 'UMengUShare/Social/Facebook'
+
+# 集成Twitter
+pod 'UMengUShare/Social/Twitter'
 end

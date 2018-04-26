@@ -12,6 +12,7 @@
 #import <UMSocialCore/UMSocialCore.h>
 #import <UShareUI/UShareUI.h>
 #import "DZNWebViewController.h"
+#import "TwitterKit/Twitter.h"
 
 @interface ViewController ()
 
@@ -27,20 +28,25 @@ const NSInteger age1 = 42;
     
     FloatActionButton *button = [[FloatActionButton alloc]initWithFrame:CGRectMake(0.0, 64, 50, 50)];
     [self.view addSubview:button];
-    return;
+    
     button.floatBtnClickBlock = ^{
-        UIViewController *vc = [[NSClassFromString(@"TestVCViewController") alloc]init];
-        [self.navigationController pushViewController:vc animated:YES];
-        return ;
+
+//        button.enabled = NO;
+//        return ;
+        
+        
+//        UIViewController *vc = [[NSClassFromString(@"TestVCViewController") alloc]init];
+//        [self.navigationController pushViewController:vc animated:YES];
+//        return ;
         
         
       //  [self shareWebPageToPlatformType:UMSocialPlatformType_WechatSession];
-        [UMSocialUIManager setPreDefinePlatforms:@[@(UMSocialPlatformType_Sina),@(UMSocialPlatformType_QQ),@(UMSocialPlatformType_Qzone),@(UMSocialPlatformType_WechatSession),@(UMSocialPlatformType_WechatFavorite),@(UMSocialPlatformType_WechatTimeLine)]];
+        [UMSocialUIManager setPreDefinePlatforms:@[@(UMSocialPlatformType_Sina),@(UMSocialPlatformType_QQ),@(UMSocialPlatformType_Qzone),@(UMSocialPlatformType_WechatSession),@(UMSocialPlatformType_WechatFavorite),@(UMSocialPlatformType_WechatTimeLine),@(UMSocialPlatformType_GooglePlus),@(UMSocialPlatformType_Facebook),@(UMSocialPlatformType_Twitter)]];
         
         [UMSocialUIManager showShareMenuViewInWindowWithPlatformSelectionBlock:^(UMSocialPlatformType platformType, NSDictionary *userInfo) {
             // 根据获取的platformType确定所选平台进行下一步操作
+//            [self shareWebPageToPlatformType:platformType];
             [self shareWebPageToPlatformType:platformType];
-            //[self getUserInfoForPlatform:platformType];
         }];
     };
     
@@ -62,6 +68,18 @@ const NSInteger age1 = 42;
     //分享消息对象设置分享内容对象
     messageObject.shareObject = shareObject;
     
+//    [[UMSocialManager defaultManager]  authWithPlatform:platformType currentViewController:self completion:^(id result, NSError *error) {
+//        if (result) {
+//            if ([result isKindOfClass:[UMSocialAuthResponse class]]) {
+//                UMSocialAuthResponse *resp = result;
+//
+//                TWTRSession *session = resp.originalResponse;
+//                NSLog(@"authTokenSecret = %@", session.authTokenSecret);
+//
+//            }
+//        }
+//    }];
+ 
     //调用分享接口
     [[UMSocialManager defaultManager] shareToPlatform:platformType messageObject:messageObject currentViewController:self completion:^(id data, NSError *error) {
         if (error) {

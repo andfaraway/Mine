@@ -22,6 +22,10 @@
      self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
+- (void)getInfo{
+    
+}
+
 
 - (void)initTableView{
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kWidth, kHeight-kTAB_BAR_H-kSTATUS_BAR_H-kNAV_BAR_H) style:UITableViewStyleGrouped];

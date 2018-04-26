@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FriendsVC : UIViewController
+@interface FriendsVC : SuperVC
 
 @end

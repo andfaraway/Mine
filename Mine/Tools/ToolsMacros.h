@@ -89,6 +89,7 @@
 #define kBgColor        RGBColor(243, 242,240)    // 页面背景色
 #define kLineColor      RGBColor(198, 201, 201)   //线条颜色
 #define kTextColor      RGBColor(56, 56, 56)      //字体颜色
+#define kWarmingRedColor [UIColor colorWithHexString:@"#d33a31"] //主题红色
 
 /** 加载图片 */
 #define ImageNamed(_name)       [UIImage imageNamed:_name]
