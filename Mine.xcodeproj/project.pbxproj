@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0BD0AFADAFDD0A5D24BB7CD0 /* libPods-Mine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC105C6DD80E66A02F37CBFE /* libPods-Mine.a */; };
+		3423ACBE2091C79C000F8373 /* UIView+RedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3423ACBD2091C79C000F8373 /* UIView+RedButton.m */; };
+		3426E6222148B38A0092186F /* WMDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3426E6202148B3890092186F /* WMDragView.m */; };
 		9ADFB14E1FBAEEDD006D1E9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFB14D1FBAEEDD006D1E9B /* main.m */; };
 		9ADFB1511FBAEEDD006D1E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFB1501FBAEEDD006D1E9B /* AppDelegate.m */; };
 		9ADFB1541FBAEEDD006D1E9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFB1531FBAEEDD006D1E9B /* ViewController.m */; };
@@ -56,6 +58,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3423ACBC2091C79C000F8373 /* UIView+RedButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+RedButton.h"; sourceTree = "<group>"; };
+		3423ACBD2091C79C000F8373 /* UIView+RedButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RedButton.m"; sourceTree = "<group>"; };
+		3426E6202148B3890092186F /* WMDragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMDragView.m; sourceTree = "<group>"; };
+		3426E6212148B3890092186F /* WMDragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMDragView.h; sourceTree = "<group>"; };
 		9ADFB1491FBAEEDD006D1E9B /* Mine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ADFB14D1FBAEEDD006D1E9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9ADFB14F1FBAEEDD006D1E9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -172,6 +178,15 @@
 				D95E81534F398E002DFCBD3A /* Pods-Mine.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		3426E61F2148B3890092186F /* WMDragView */ = {
+			isa = PBXGroup;
+			children = (
+				3426E6202148B3890092186F /* WMDragView.m */,
+				3426E6212148B3890092186F /* WMDragView.h */,
+			);
+			path = WMDragView;
 			sourceTree = "<group>";
 		};
 		9ADFB1401FBAEEDD006D1E9B = {
@@ -406,6 +421,7 @@
 		DAF590AB1FBBD3CE00460D26 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				3426E61F2148B3890092186F /* WMDragView */,
 				DABFF4791FD7856E0053707D /* Language */,
 				DAF590EE1FBBE13F00460D26 /* ToolsMacros.h */,
 				DA3A30CB1FBED0BD003D4B3D /* BaseTools.h */,
@@ -446,6 +462,8 @@
 				DA504B2E1FBD8938000AE3D8 /* UIButton+Block.m */,
 				DA3A30C61FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.h */,
 				DA3A30C71FBEC7D0003D4B3D /* UIViewController+BackButtonHandler.m */,
+				3423ACBC2091C79C000F8373 /* UIView+RedButton.h */,
+				3423ACBD2091C79C000F8373 /* UIView+RedButton.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -630,6 +648,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3426E6222148B38A0092186F /* WMDragView.m in Sources */,
 				DA44DA0F200763FA00451FF2 /* MyMusicVC.m in Sources */,
 				DA2BCA6F1FC8093D006BF1CB /* MineNetworkTool.m in Sources */,
 				9ADFB1541FBAEEDD006D1E9B /* ViewController.m in Sources */,
@@ -666,6 +685,7 @@
 				DA022B7B1FC2CEDC007B7147 /* BatteryInfoManager.m in Sources */,
 				DAC3F74B1FDE787700322868 /* AccountMessageNoLoginCell.m in Sources */,
 				DAE71C051FCBF95800E128B1 /* HasTabBarVC.m in Sources */,
+				3423ACBE2091C79C000F8373 /* UIView+RedButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

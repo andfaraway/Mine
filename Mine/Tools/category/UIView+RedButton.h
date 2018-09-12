@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (RedButton)
+@property(nonatomic,strong)UIView *RedPointView;
+
+- (void)showRedPoint;
+
+- (void)hideRedPoint;
 
 @end
